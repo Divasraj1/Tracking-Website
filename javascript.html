@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript</title>
+  </head>
+  <body>
+    <p id="text">Hello Divas</p>
+    <button id="button">Click to change text</button>
+    <p id="text2"> this is a text</p>
+
+    <button id="button2">append text</button>
+    <p id="notext"></p>
+    <button id="button3">pop up text</button>
+    <!-- <button onclick="alert('Hii divasraj')">click me!</button>
+      <script type="text/javascript">       this is how a pop up is created
+        alert("Hello divasraj");
+                                            this is how comment is writtten in html
+      </script>
+    -->
+    <p id="sometext">This is some text</p>
+    <button id="button4">Changer</button>
+
+    <p id="sometext2">This is Disappering text</p>
+    <button id="button5">Disapper</button>
+
+    <input type="text" id="changetext">
+    <button id="button6">Changetext</button>
+    <p id="text21">This is some text</p>
+
+
+    <script type="text/javascript">
+    //  document.getElementById("text").innerHTML = "Hello DIVASRAJ";
+      document.getElementById("button").onclick = function(){
+      //  alert("Button Clicked");
+      document.getElementById("text").innerHTML = "Hello KING";
+      }
+
+      document.getElementById("button2").onclick = function(){
+      //  alert("Button Clicked");
+      document.getElementById("text2").innerHTML = "javascript is "+ document.getElementById("text2").innerHTML + " you are awesome";
+      }
+
+      document.getElementById("button3").onclick = function(){
+        document.getElementById("notext").innerHTML = "<h1>This is a pop up text</h1>";
+      }
+      document.getElementById("button4").onclick = function(){
+        document.getElementById("sometext").style.color = "red";
+      }
+
+      document.getElementById("button4").onclick = function(){
+        document.getElementById("sometext").style.fontSize = "50px";
+        document.getElementById("sometext").style.color = "red";
+      }
+      document.getElementById("button5").onclick = function(){
+        document.getElementById("sometext2").style.display = "none";
+      }
+      document.getElementById("button6").onclick = function(){
+        var textEntered = "";
+        textEntered = document.getElementById("changetext").value;
+        alert(textEntered);
+        document.getElementById("text21").innerHTML = textEntered;
+
+      }
+
+      //this is how one line comment is written in Javascript
+
+      /*this is how multi line comment is
+      written in javascript*/
+    </script>
+  </body>
+</html>
